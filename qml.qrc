@@ -1,5 +1,10 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>designModules/topBar/TopBar.qml</file>
+        <file>designModules/topBar/buttons/CloseButton.qml</file>
+        <file>designModules/topBar/buttons/MaximizeButton.qml</file>
+        <file>designModules/topBar/buttons/MinimizeButton.qml</file>
+        <file>designModules/topBar/Tittle/Tittle.qml</file>
     </qresource>
 </RCC>
