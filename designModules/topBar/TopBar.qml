@@ -10,8 +10,8 @@ Rectangle {
     z: 1
     gradient: Gradient {
         GradientStop {
-            position: 0.893
-            color: "#e6000000"
+            position: 0.369
+            color: "#000000"
         }
 
         GradientStop {

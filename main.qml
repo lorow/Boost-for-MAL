@@ -4,6 +4,7 @@ import QtGraphicalEffects 1.0
 import QtQuick.Window 2.2
 
 import "./designModules/topBar/"
+import "./designModules/animeScreen"
 
 ApplicationWindow {
 
@@ -27,8 +28,10 @@ ApplicationWindow {
         z: 5
     }
 
-    GridView {
-        id: gridView1
+    AnimeScreen
+    {
+        id: anime
+        z: 1
         anchors.topMargin: 69
         anchors.right: parent.right
         anchors.rightMargin: -5
@@ -37,191 +40,5 @@ ApplicationWindow {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 0
         anchors.top: parent.top
-        snapMode: GridView.NoSnap
-        cacheBuffer: 80
-        cellWidth:  136
-        cellHeight: 209
-
-        delegate: Item {
-            Column {
-                Rectangle {
-                    width: 134
-                    height: 207
-                    color: colorCode
-                    anchors.horizontalCenter: parent.horizontalCenter
-                }
-            }
-        }
-        model: ListModel {
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-            ListElement {
-                name: "Grey"
-                colorCode: "white"
-            }
-        }
     }
 }

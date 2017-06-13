@@ -3,8 +3,8 @@ import QtQuick 2.0
 
 Rectangle {
     id: closeButton
-    width: 10
-    height: 10
+    width: 10.5
+    height: 10.5
     color: "#ffffff"
     radius: 5
     border.width: 0

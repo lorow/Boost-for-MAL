@@ -6,5 +6,10 @@
         <file>designModules/topBar/buttons/MaximizeButton.qml</file>
         <file>designModules/topBar/buttons/MinimizeButton.qml</file>
         <file>designModules/topBar/Tittle/Tittle.qml</file>
+        <file>designModules/animeScreen/AnimeScreen.qml</file>
+        <file>designModules/animeScreen/AnimeElement.qml</file>
+        <file>images/test.jpg</file>
+        <file>designModules/topBar/icons/clapperboard.png</file>
+        <file>designModules/topBar/icons/open-book.png</file>
     </qresource>
 </RCC>

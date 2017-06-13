@@ -4,8 +4,8 @@ Rectangle {
     id: maximiseButton
     x: -5
     y: 0
-    width: 10
-    height: 10
+    width: 10.5
+    height: 10.5
     color: "#ffffff"
     radius: 5
     border.width: 0
