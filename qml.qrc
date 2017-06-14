@@ -11,5 +11,7 @@
         <file>images/test.jpg</file>
         <file>designModules/topBar/icons/clapperboard.png</file>
         <file>designModules/topBar/icons/open-book.png</file>
+        <file>designModules/leftSubMenu/Menu/LeftSubMenu.qml</file>
+        <file>designModules/leftSubMenu/Button/MenuButton.qml</file>
     </qresource>
 </RCC>

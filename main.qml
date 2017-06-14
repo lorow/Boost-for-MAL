@@ -5,6 +5,8 @@ import QtQuick.Window 2.2
 
 import "./designModules/topBar/"
 import "./designModules/animeScreen"
+import "./designModules/leftSubMenu/Menu"
+
 
 ApplicationWindow {
 
@@ -13,13 +15,12 @@ ApplicationWindow {
     width: 1097
     height: 622
     color: "#000000"
-    opacity: 1
 
     flags: Qt.FramelessWindowHint | Qt.Window
 
 
-    property var actualPositionX: rootWindow.x
-    property var actualPositionY: rootWindow.y
+    property int actualPositionX: rootWindow.x
+    property int actualPositionY: rootWindow.y
 
     TopBar
     {
@@ -40,5 +41,15 @@ ApplicationWindow {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 0
         anchors.top: parent.top
+    }
+    LeftSubMenu
+    {
+        z: 2
+        id : sideMenu
+        width: 90
+        anchors.left: parent.left
+        anchors.leftMargin: -width
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 0
     }
 }
