@@ -12,6 +12,12 @@
         <file>designModules/topBar/icons/clapperboard.png</file>
         <file>designModules/topBar/icons/open-book.png</file>
         <file>designModules/leftSubMenu/Menu/LeftSubMenu.qml</file>
-        <file>designModules/leftSubMenu/Button/MenuButton.qml</file>
+        <file>designModules/topBar/buttons/AnimeScreenButton.qml</file>
+        <file>designModules/topBar/buttons/AllowMoveArea.qml</file>
+        <file>designModules/topBar/buttons/MangaScreenButton.qml</file>
+        <file>designModules/mangaScreen/MangaElement.qml</file>
+        <file>designModules/mangaScreen/MangaScreen.qml</file>
+        <file>designModules/topBar/searchBar/SearchBar.qml</file>
+        <file>designModules/topBar/icons/magnifying-glass (1).png</file>
     </qresource>
 </RCC>

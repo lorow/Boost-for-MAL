@@ -3,44 +3,45 @@ import QtQuick 2.0
 Item {
     id: title
 
-    width: 200
     height: 69
+    width: 200
 
     Text {
         id: text1
-        color: "#f05253"
-        text: "Boost"
-        font.bold: true
+        anchors.fill: parent
+        anchors.bottomMargin: 41
         anchors.rightMargin: 0
         anchors.leftMargin: 0
         anchors.topMargin: 8
-        anchors.bottomMargin: 41
-        textFormat: Text.RichText
+
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignTop
         wrapMode: Text.WrapAnywhere
-        horizontalAlignment: Text.AlignHCenter
-        anchors.fill: parent
+        textFormat: Text.RichText
         font.pixelSize: 18
+        font.bold: true
+        color: "#f05253"
+        text: "Boost"
     }
 
     Text {
         id: text2
-        x: -8
-        y: 8
-        color: "#ffffff"
-        text: "For MAL"
-        style: Text.Normal
-        font.bold: false
+        anchors.fill: parent
+        anchors.bottomMargin: 16
         anchors.rightMargin: 0
         anchors.leftMargin: 0
         anchors.topMargin: 34
-        anchors.bottomMargin: 16
         horizontalAlignment: Text.AlignHCenter
-        anchors.fill: parent
-        font.pixelSize: 14
-        wrapMode: Text.WrapAnywhere
         verticalAlignment: Text.AlignTop
+        wrapMode: Text.WrapAnywhere
         textFormat: Text.RichText
+        style: Text.Normal
+        font.pixelSize: 14
+        font.bold: false
+        color: "#666666"
+        text: "For MAL"
+        x: -8
+        y: 8
     }
 
 }

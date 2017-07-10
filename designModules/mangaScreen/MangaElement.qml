@@ -3,9 +3,9 @@ import QtGraphicalEffects 1.0
 
 Item {
     property string addr: "none"
-    width: 538
-    height: 786
     id: root
+    height: 786
+    width: 538
     Rectangle
     {
         id: background
@@ -13,15 +13,15 @@ Item {
 
         Image {
             id: cover
+            height: 640
             anchors.right: parent.right
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.rightMargin: 0
             anchors.leftMargin: 0
             anchors.topMargin: 0
-            source: "../../images/test.jpg"
 
-            height: 640
+            source: "../../images/test.jpg"
         }
         MouseArea
         {
@@ -31,7 +31,7 @@ Item {
 
             onClicked:
             {
-                console.log("animu!")
+                console.log("mangu!")
             }
         }
     }
@@ -40,9 +40,9 @@ Item {
         id: shadow
         color: qsTr("#000000")
         anchors.fill: parent
-        verticalOffset: 14
-        horizontalOffset: 14
 
+        horizontalOffset: 14
+        verticalOffset: 14
         cached: true
         fast: true
 

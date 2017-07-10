@@ -2,30 +2,24 @@ import QtQuick 2.0
 
 Rectangle {
     id: minimizeButton
-    x: 5
-    y: -8
-    width: 10.5
+    anchors.right: parent.right
+    anchors.top: parent.top
+    anchors.rightMargin: 35
+    anchors.topMargin: 5
+    color: "#24e531"
     height: 10.5
-    color: "#ffffff"
+    width: 10.5
     radius: 5
-    border.width: 0
+
+    y: -8
+    x: 5
     MouseArea {
         id: mouseArea4
         anchors.fill: parent
         hoverEnabled: true
-        onEntered: {
-            parent.color = "#24e531"
-        }
-        onExited: {
-            parent.color = "white"
-        }
         onClicked:
         {
             rootWindow.showMinimized()
         }
     }
-    anchors.topMargin: 5
-    anchors.top: parent.top
-    anchors.right: parent.right
-    anchors.rightMargin: 35
 }

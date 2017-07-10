@@ -11,15 +11,15 @@ Item {
 
         delegate: Item {
             Column {
-                AnimeElement
+                MangaScreen
                 {
                     width: 134
                     height: 207
                 }
             }
         }
-        model: ListModel {
-
+        model: ListModel {       
+            ListElement {}
         }
     }
 

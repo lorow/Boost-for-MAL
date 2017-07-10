@@ -1,79 +1,110 @@
 import QtQuick 2.7
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.2
+import QtGraphicalEffects 1.0
 
 import "./buttons"
 import "./Tittle"
+import "./searchBar"
+
 Item
 {
+    property ApplicationWindow rootWindow
+    property SwipeView pageView
+
     id : root
-    width: parent.width
+    width: 1139
     height: 69
     Rectangle {
         id: bar
         anchors.fill: parent
-        gradient: Gradient {
-            GradientStop {
-                position: 0
-                color: "#eb000000"
-            }
-
-            GradientStop {
-                position: 0.993
-                color: "#e6000000"
-            }
-
-            GradientStop {
-                position: 0.99
-                color: "#b3000000"
-            }
-
-
-        }
-        MouseArea {
-            id: mouseArea1
-
-            property variant clickPos: "1,1"
+        color:"#ffffff"
+        AllowMoveArea
+        {
+            id: allowMoveArea
+            rootWindow: root.rootWindow
             anchors.fill: parent
+        }
 
-            onPressed: {
-                clickPos  = Qt.point(mouse.x,mouse.y)
-            }
+        AnimeScreenButton
+        {
+            id: animeScreenButton
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.leftMargin: 130
+            anchors.bottomMargin: 0
+            anchors.topMargin: 0
+            width: 69
+        }
 
-            onPositionChanged: {
-                var delta = Qt.point(mouse.x-clickPos.x, mouse.y-clickPos.y)
-                rootWindow.x += delta.x;
-                rootWindow.y += delta.y;
-                actualPositionX = rootWindow.x
-                actualPositionY = rootWindow.y
-            }
-
+        MangaScreenButton
+        {
+            id: mangaScreenButton
+            anchors.left: animeScreenButton.right
+            anchors.bottom: parent.bottom
+            anchors.top: parent.top
+            anchors.bottomMargin: 0
+            anchors.leftMargin: 0
+            anchors.topMargin: 0
+            width: 69
         }
 
         Tittle
         {
             id: tittle
-            x: 220
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
             anchors.top: parent.top
+            anchors.bottomMargin: 0
+            anchors.leftMargin: 28
             anchors.topMargin: 0
+            width: 86
         }
 
         CloseButton
         {
             id: close
+            anchors.rightMargin: 12
+            anchors.topMargin: 12
+
+            width: 12
+            height: 12
+
+            x: 1427
         }
 
         MaximizeButton
         {
             id: maximize
+            anchors.right: close.left
+            anchors.rightMargin: 6
+            anchors.topMargin: 12
+
+            width: 12
+            height: 12
+
+            x: 1411
         }
 
         MinimizeButton
         {
             id: minimize
+            anchors.right: maximize.left
+            anchors.top: parent.top
+            anchors.rightMargin: 6
+            anchors.topMargin: 12
+
+            width: 12
+            height: 12
+
+            x: 1393
+        }
+
+        SearchBar
+        {
+            x: 750
+            y: 19
+            z: 1
         }
     }
-
-
-
 }
