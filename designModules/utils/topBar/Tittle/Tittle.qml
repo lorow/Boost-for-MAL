@@ -10,8 +10,6 @@ Item {
         id: text1
         anchors.fill: parent
         anchors.bottomMargin: 41
-        anchors.rightMargin: 0
-        anchors.leftMargin: 0
         anchors.topMargin: 8
 
         horizontalAlignment: Text.AlignHCenter
@@ -28,8 +26,6 @@ Item {
         id: text2
         anchors.fill: parent
         anchors.bottomMargin: 16
-        anchors.rightMargin: 0
-        anchors.leftMargin: 0
         anchors.topMargin: 34
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignTop

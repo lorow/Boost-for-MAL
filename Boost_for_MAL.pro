@@ -1,8 +1,9 @@
-QT += qml quick quickcontrols2 widgets
+QT += qml quick quickcontrols2 widgets network
 
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    loginhandler.cpp
 
 RESOURCES += qml.qrc
 
@@ -11,3 +12,6 @@ QML_IMPORT_PATH =
 
 # Default rules for deployment.
 include(deployment.pri)
+
+HEADERS += \
+    loginhandler.h

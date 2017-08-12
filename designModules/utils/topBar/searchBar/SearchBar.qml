@@ -11,8 +11,8 @@ Item
         id: root
         anchors.fill: parent
 
-        color: "#ffffff"
-        radius: 16
+        color: "#f2f2f2"
+        radius: 5
         clip: false
         z: 1
 
@@ -30,6 +30,7 @@ Item
             horizontalAlignment: Text.AlignLeft
             selectionColor: "#2e8ff0"
             text: qsTr("Search")
+            font.wordSpacing: -2
             color: "#848080"
             font.pixelSize: 11
             topPadding: 8
@@ -55,7 +56,8 @@ Item
             width: 309
             height: 29
 
-            radius: 15
+            radius: 5
+            visible: false
             z: -1
 
         }
@@ -67,7 +69,7 @@ Item
             anchors.left: parent.left
             anchors.leftMargin: 9
 
-            color: "#10a0fc"
+            color: "#f05253"
             radius: 11
             height: 21
             width: 21

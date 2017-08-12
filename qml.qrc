@@ -1,23 +1,43 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>designModules/topBar/TopBar.qml</file>
-        <file>designModules/topBar/buttons/CloseButton.qml</file>
-        <file>designModules/topBar/buttons/MaximizeButton.qml</file>
-        <file>designModules/topBar/buttons/MinimizeButton.qml</file>
-        <file>designModules/topBar/Tittle/Tittle.qml</file>
-        <file>designModules/animeScreen/AnimeScreen.qml</file>
-        <file>designModules/animeScreen/AnimeElement.qml</file>
         <file>images/test.jpg</file>
-        <file>designModules/topBar/icons/clapperboard.png</file>
-        <file>designModules/topBar/icons/open-book.png</file>
-        <file>designModules/leftSubMenu/Menu/LeftSubMenu.qml</file>
-        <file>designModules/topBar/buttons/AnimeScreenButton.qml</file>
-        <file>designModules/topBar/buttons/AllowMoveArea.qml</file>
-        <file>designModules/topBar/buttons/MangaScreenButton.qml</file>
-        <file>designModules/mangaScreen/MangaElement.qml</file>
-        <file>designModules/mangaScreen/MangaScreen.qml</file>
-        <file>designModules/topBar/searchBar/SearchBar.qml</file>
-        <file>designModules/topBar/icons/magnifying-glass (1).png</file>
+        <file>designModules/screens/animeScreen/AnimeElement.qml</file>
+        <file>designModules/screens/animeScreen/AnimeScreen.qml</file>
+        <file>designModules/screens/loginScreen/LoginScreen.qml</file>
+        <file>designModules/screens/mainScreen/MainScreen.qml</file>
+        <file>designModules/screens/mangaScreen/MangaElement.qml</file>
+        <file>designModules/screens/mangaScreen/MangaScreen.qml</file>
+        <file>designModules/utils/leftSubMenu/Menu/LeftSubMenu.qml</file>
+        <file>designModules/utils/topBar/buttons/AllowMoveArea.qml</file>
+        <file>designModules/utils/topBar/buttons/AnimeScreenButton.qml</file>
+        <file>designModules/utils/topBar/buttons/CloseButton.qml</file>
+        <file>designModules/utils/topBar/buttons/MangaScreenButton.qml</file>
+        <file>designModules/utils/topBar/buttons/MaximizeButton.qml</file>
+        <file>designModules/utils/topBar/buttons/MinimizeButton.qml</file>
+        <file>designModules/utils/topBar/icons/clapperboard.png</file>
+        <file>designModules/utils/topBar/icons/magnifying-glass (1).png</file>
+        <file>designModules/utils/topBar/icons/open-book.png</file>
+        <file>designModules/utils/topBar/searchBar/SearchBar.qml</file>
+        <file>designModules/utils/topBar/Tittle/Tittle.qml</file>
+        <file>designModules/utils/topBar/TopBar.qml</file>
+        <file>fonts/Roboto-Black.ttf</file>
+        <file>fonts/Roboto-BlackItalic.ttf</file>
+        <file>fonts/Roboto-Bold.ttf</file>
+        <file>fonts/Roboto-BoldItalic.ttf</file>
+        <file>fonts/Roboto-Italic.ttf</file>
+        <file>fonts/Roboto-Light.ttf</file>
+        <file>fonts/Roboto-LightItalic.ttf</file>
+        <file>fonts/Roboto-Medium.ttf</file>
+        <file>fonts/Roboto-MediumItalic.ttf</file>
+        <file>fonts/Roboto-Regular.ttf</file>
+        <file>fonts/Roboto-Thin.ttf</file>
+        <file>fonts/Roboto-ThinItalic.ttf</file>
+        <file>designModules/screens/loginScreen/images/rocket-ship.png</file>
+        <file>designModules/screens/loginScreen/images/user.png</file>
+        <file>designModules/utils/General/GeneralButton.qml</file>
+        <file>designModules/screens/loginScreen/components/LogoSite.qml</file>
+        <file>designModules/screens/loginScreen/components/LoginSite.qml</file>
+        <file>designModules/utils/leftSubMenu/Buttons/SideButton.qml</file>
     </qresource>
 </RCC>

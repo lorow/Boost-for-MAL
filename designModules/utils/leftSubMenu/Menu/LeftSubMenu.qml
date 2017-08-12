@@ -19,7 +19,6 @@ Item {
             anchors.rightMargin: 38
             anchors.leftMargin: 45
             anchors.topMargin: 16
-            border.width: 0
             color: "#565656"
             visible: true
             height: 50
@@ -28,7 +27,7 @@ Item {
         }
 
         Image {
-            id: image
+            id: avatar
             property bool rounded: true
             property bool adapt: true
             height: 50
@@ -39,15 +38,15 @@ Item {
             anchors.leftMargin: 44
             anchors.topMargin: 16
 
-            source: "../../../images/test.jpg"
+
             fillMode: Image.Tile
 
             z: 2
 
             layer.enabled: rounded
             layer.effect: ShaderEffect {
-                property real adjustX: image.adapt ? Math.max(width / height, 1) : 1
-                property real adjustY: image.adapt ? Math.max(1 / (width / height), 1) : 1
+                property real adjustX: avatar.adapt ? Math.max(width / height, 1) : 1
+                property real adjustY: avatar.adapt ? Math.max(1 / (width / height), 1) : 1
 
                 fragmentShader: "
                 #ifdef GL_ES
@@ -72,5 +71,31 @@ Item {
             }
         }
 
+        Rectangle {
+            id: shadow
+            anchors.bottom: parent.bottom
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.rightMargin: -4
+            anchors.topMargin: 0
+            color: "#e4e4e4"
+            anchors.bottomMargin: 0
+            width: 4
+            x: 132
+            z: 1
+        }
+
+        Rectangle {
+            id: bottomPadding
+            anchors.bottom: parent.bottom
+            anchors.right: parent.right
+            anchors.left: parent.left
+            color: "#f05253"
+            anchors.rightMargin: -1
+            height: 8
+            width: 2
+        }
+
     }
 }
+

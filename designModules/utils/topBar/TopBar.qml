@@ -32,8 +32,6 @@ Item
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.leftMargin: 130
-            anchors.bottomMargin: 0
-            anchors.topMargin: 0
             width: 69
         }
 
@@ -55,9 +53,7 @@ Item
             anchors.bottom: parent.bottom
             anchors.left: parent.left
             anchors.top: parent.top
-            anchors.bottomMargin: 0
             anchors.leftMargin: 28
-            anchors.topMargin: 0
             width: 86
         }
 

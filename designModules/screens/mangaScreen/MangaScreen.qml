@@ -1,6 +1,7 @@
 import QtQuick 2.0
 
 Item {
+    id: root
     GridView {
         id: gridView1
         anchors.fill: parent

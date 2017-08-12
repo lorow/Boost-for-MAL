@@ -4,8 +4,8 @@ import QtGraphicalEffects 1.0
 
 Item {
     id: root
-    height: 69
     width: 69
+    height: 69
 
     Rectangle {
         id: rectangle
@@ -16,12 +16,12 @@ Item {
         Text {
             id: text1
             anchors.fill: parent
+            //anchors.top: image.bottom
 
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            anchors.top: image.bottom
             font.family: "Tahoma"
-            text: qsTr("Manga")
+            text: qsTr("Anime")
             color: "#565353"
 
             font.pixelSize: 14

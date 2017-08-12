@@ -17,9 +17,6 @@ Item {
             anchors.right: parent.right
             anchors.left: parent.left
             anchors.top: parent.top
-            anchors.rightMargin: 0
-            anchors.leftMargin: 0
-            anchors.topMargin: 0
 
             source: "../../images/test.jpg"
         }
@@ -29,10 +26,7 @@ Item {
             anchors.fill: parent
             z: 1
 
-            onClicked:
-            {
-                console.log("mangu!")
-            }
+            onClicked:{ }
         }
     }
 
