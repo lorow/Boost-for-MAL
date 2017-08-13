@@ -12,8 +12,8 @@ ApplicationWindow {
     flags: Qt.FramelessWindowHint | Qt.Window
     color: "#ffffff"
     visible: true
-    height: 721
-    width: 1139
+    height: Screen.desktopAvailableHeight  * 0.6675 //721
+    width: Screen.desktopAvailableWidth  * 0.5932 //1139
 
     MainScreen {
         id: mainScreen
@@ -24,7 +24,7 @@ ApplicationWindow {
     LoginScreen{
         id: loginScreen
         antialiasing: true
-        visible: false
+        //visible: false
         anchors.fill: parent
         rootWindow: rootWindow
     }
@@ -36,8 +36,6 @@ ApplicationWindow {
 
             loginScreen.visible = false
             mainScreen.visible = true
-
         }
-
     }
 }

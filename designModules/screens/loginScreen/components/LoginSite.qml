@@ -166,9 +166,16 @@ Item {
         }
 
         ColorOverlay {
-            anchors.fill: userIcon
+            x: 221
+            y: 80
+            width: 170
+            height: 170
             source: userIcon
             color: "#f05253"
+            anchors.verticalCenterOffset: -196
+            anchors.horizontalCenterOffset: 0
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
             z: 1
             visible: true
         }

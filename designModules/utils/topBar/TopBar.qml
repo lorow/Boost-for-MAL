@@ -99,7 +99,12 @@ Item
         SearchBar
         {
             x: 750
-            y: 19
+            anchors.right: minimize.left
+            anchors.rightMargin: 20
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 19
+            anchors.top: parent.top
+            anchors.topMargin: 19
             z: 1
         }
     }

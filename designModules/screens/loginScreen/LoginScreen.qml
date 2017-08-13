@@ -27,23 +27,21 @@ Item {
 
     LogoSite{
         id: logo
-
+        x: 0
+        width:  parent.width  * 0.4741//540
         anchors.bottom: parent.bottom
-        anchors.left: parent.left
         anchors.top: parent.top
-
+        anchors.left: parent.left
         robotoLight: robotoLight
 
-        width: 526
     }
 
     LoginSite{
         id: login
-
-        anchors.left: logo.right
-        anchors.leftMargin: 2
-        anchors.right: parent.right
+        x: 541
+        width: parent.width * 0.5258//599
         anchors.bottom: parent.bottom
+        anchors.right: parent.right
         anchors.top: parent.top
     }
 
